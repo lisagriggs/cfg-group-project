@@ -1,0 +1,227 @@
+/* Colours 
+light orange - #ffead2
+orange - #ff8961
+light brown - #a36854
+dark brown - #56423c
+*/
+
+body {
+  margin: 0 auto;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #56423c;
+}
+
+.center {
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.btn-dark {
+  background: #56423c;
+  border: none;
+}
+
+/* Navigation Bar */
+header {
+  display: flex;
+  background: #ffead2;
+  justify-content: center;
+}
+
+.navbar {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: bold;
+  width: 1100px;
+}
+
+.navbar-nav {
+  align-items: flex-end;
+}
+
+.logo {
+  font-family: "Ruddy", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #56423c;
+  transition: transform 250ms;
+}
+
+.logo:hover {
+  color: #ff8961;
+  transform: translateY(-2px);
+}
+
+h1, .navbar, #hero {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 600;
+}
+
+
+/* Hero Image */
+
+#hero {
+  background: linear-gradient(to bottom, #ffead2, #ff896190), url('imgs/hero-image.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  text-align: center;
+  width: 100%;
+}
+
+#hero h1 {
+  font-family: "Ruddy", sans-serif;
+  text-transform: uppercase;
+  color: #56423c;
+}
+
+#hero button:hover {
+  background-color: #a36854;
+}
+
+
+/* Home Page Animal Gallery */
+
+#animals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  width: 1100px;
+}
+
+.animal-box {
+  min-height: 250px;
+  min-width: 250px;
+  background: #ff8961;
+}
+
+.homepage-animals {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 1100px;
+}
+
+.card {
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  height: 350px !important;
+  border: none;
+  border-radius: 50% !important;
+}
+
+.pet-name {
+  font-family: "Ruddy", sans-serif;
+  color: #56423c;
+}
+
+.pet-name:hover {
+  color: #ff8961;
+}
+
+.text-bg-dark {
+  background-color: #ffead2 !important;
+}
+
+
+
+/* Footer */
+
+footer {
+  background: #56423c;
+  color: #fff;
+}
+
+footer .logo, footer .logo:hover {
+  color: #ffead2;
+}
+
+footer .bi {
+  font-size: 25px;
+  color: #ffead2;
+}
+
+
+/* Animal Page */
+
+.animal-description {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.animal-description div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animal-description h1
+{
+  font-size: 60px;
+  color: #ff8961;
+}
+
+.animal-description ul li
+{
+  font-weight: bold;
+  padding-left: 6px;
+  margin-top: 16px;
+}
+
+.animal-description img
+{
+  border-radius: 50%;
+  background-color: #ffead2 ;
+}
+
+.photos div
+{
+  width: 1100px;
+}
+
+.animal-description li::marker {
+  content: "\e91d";
+  font-family: "Material Symbols Outlined"; 
+  color: #ff8961;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .employee-gallery  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photos div {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .card {
+    width: 350px;
+  }
+
+  .employee-gallery  {
+    flex-direction: column;
+    align-items: center;
+  }
+}
