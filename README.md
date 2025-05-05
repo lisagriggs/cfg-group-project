@@ -1,1 +1,2 @@
-- Live Site: [cafebalance.netlify.app](cafebalance.netlify.app)
+- Live Site: [https://cafebalance.netlify.app](https://cafebalance.netlify.app)
+
